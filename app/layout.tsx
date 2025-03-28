@@ -1,4 +1,5 @@
-import { Header } from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer/Footer";
+import { Header } from "@/components/layout/Header/Header";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -31,17 +32,18 @@ export default function RootLayout({
 				className={cn(
 					geistSans.variable,
 					geistMono.variable,
-					"h-full antialiased flex flex-col gap-6"
+					"h-full antialiased flex flex-col"
 				)}
 			>
 				<ThemeProvider
 					attribute='class'
-					defaultTheme='system'
+					defaultTheme='dark'
 					enableSystem
 					disableTransitionOnChange
 				>
 					<Header />
 					<main className='flex-1'>{children}</main>
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>

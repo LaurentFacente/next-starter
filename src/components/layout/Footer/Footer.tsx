@@ -5,7 +5,7 @@ export function Footer() {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className='border-t border-accent bg-background px-4 py-4'>
+		<footer className='border-t border-gray-800 bg-black text-white px-4 py-4'>
 			<div className='container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0'>
 				{/* Logo */}
 				<div className='flex text-xl'>
@@ -18,7 +18,7 @@ export function Footer() {
 					<Link
 						href='https://instagram.com'
 						target='_blank'
-						className='text-foreground hover:text-primary transition-colors'
+						className='text-white hover:text-primary transition-colors'
 						aria-label='GitHub'
 					>
 						<Instagram className='w-6 h-6' />
@@ -26,7 +26,7 @@ export function Footer() {
 					<Link
 						href='https://linkedin.com'
 						target='_blank'
-						className='text-foreground hover:text-primary transition-colors'
+						className='text-white hover:text-primary transition-colors'
 						aria-label='LinkedIn'
 					>
 						<Linkedin className='w-6 h-6' />
@@ -34,7 +34,7 @@ export function Footer() {
 					<Link
 						href='https://twitter.com'
 						target='_blank'
-						className='text-foreground hover:text-primary transition-colors'
+						className='text-white hover:text-primary transition-colors'
 						aria-label='Twitter'
 					>
 						<Twitter className='w-6 h-6' />

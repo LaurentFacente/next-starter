@@ -1,5 +1,18 @@
-export default function Home() {
+import AboutUs from "@/components/layout/AboutUs/AboutUs";
+import Contact from "@/components/layout/Contact/Contact";
+import { Parallax } from "@/components/layout/Parallax/Parallax";
+import { products } from "@/components/layout/Parallax/parallax.utils";
+import SplashCursor from "@/components/SplashCursor/SplashCursor";
+import Hero from "../src/components/layout/Hero/Hero";
+
+export default function Page() {
 	return (
-		<div className='mx-auto max-w-3xl w-full px-4 sm:px6 lg:max-w-7xl lg:px-8'></div>
+		<>
+			<SplashCursor />
+			<Hero />
+			<Parallax products={products} />
+			<AboutUs />
+			<Contact />
+		</>
 	);
 }

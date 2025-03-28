@@ -10,7 +10,7 @@ const Contact = ({ text = "CONTACT" }) => {
 
 	return (
 		<div className='flex flex-col justify-center items-center h-[50vh] bg-black'>
-			<p className='text-base leading-relaxed opacity-70 font-bold mb-16'>
+			<p className='text-base leading-relaxed text-gray-300 opacity-70  mb-16'>
 				LETS MAKE SOMETHING TOGETHER
 			</p>
 			{/* Animated Text */}
